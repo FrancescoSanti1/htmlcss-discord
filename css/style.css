@@ -20,7 +20,7 @@ body {
     clear: both;
 }
 
-.header-top {
+#header-top {
     margin: 0 auto;
     width: 80%;
     /* debug */
@@ -74,6 +74,45 @@ body {
 
 footer {
     /* debug */
-    height: 300px;
     background-color: rgb(56, 56, 56);
+}
+
+#social {
+    width: 25%;
+    float: left;
+
+    /* debug */
+    height: 100px;
+    background-color: red;
+}
+
+.footer-menu {
+    width: calc(75% / 4);
+    float: left;
+
+    /* debug */
+    height: 200px;
+    background-color: green;
+}
+
+#footer-bottom {
+    border-top: solid 1px lightgrey;
+}
+
+#footer-logo {
+    width: 20%;
+    float: left;
+
+    /* debug */
+    height: 50px;
+    background-color: blueviolet;
+}
+
+.pulsante-registrati {
+    width: 20%;
+    float: right;
+
+    /* debug */
+    height: 50px;
+    background-color: blueviolet;
 }
