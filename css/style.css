@@ -1,3 +1,5 @@
+/* Caratteristiche generali */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,11 +8,11 @@
 
 body {
     font-family: Arial, sans-serif;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .centratura {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
 }
 
@@ -20,21 +22,44 @@ body {
     clear: both;
 }
 
+/* CSS relativo all'header */
+
+header {
+    background-image: url("../img/jumbo.png");
+    background-size: cover;
+}
+
 #header-top {
-    margin: 0 auto;
+    padding-top: 20px;
+}
+
+#header-top #logo {
+    width: 10%;
+    float: left;
+}
+
+#header-top nav {
     width: 80%;
-    /* debug */
-    height: 50px;
-    background-color: blue;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    margin: 0 20px;
+}
+
+#header-top .pulsante {
+    max-width: 10%;
+    float: right;
+    color: blue;
 }
 
 #jumbotron {
-    margin: 0 auto;
-    width: 80%;
     position: relative;
-    /* debug */
-    height: 300px;
-    background-color: sandybrown;
+    height: 500px;
 }
 
 #jumbotron-contenuti {
@@ -42,11 +67,29 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
 
-    /* debug */
-    height: 100px;
-    width: 300px;
-    background-color: brown;
+#jumbotron-contenuti h1 {
+    font-size: 40px;
+}
+
+#jumbotron-contenuti p {
+    margin: 30px 0 20px;
+    line-height: 25px;
+}
+
+.pulsante {
+    display: inline-block;
+    padding: 10px 20px;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+}
+
+#jumbotron-contenuti a {
+    margin: 0 10px;
 }
 
 .blocco-contenuto-principale {
@@ -108,7 +151,7 @@ footer {
     background-color: blueviolet;
 }
 
-.pulsante-registrati {
+.pulsante.registrati {
     width: 20%;
     float: right;
 
