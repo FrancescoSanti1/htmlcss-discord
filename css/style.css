@@ -58,26 +58,24 @@ nav ul li a {
 }
 
 #jumbotron {
-    position: relative;
-    height: 500px;
-}
-
-#jumbotron-contenuti {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    padding: 150px 0;
     text-align: center;
     color: white;
+    width: 60%;
+    margin: 0 auto;
 }
 
-#jumbotron-contenuti h1 {
+#jumbotron h1 {
     font-size: 40px;
 }
 
-#jumbotron-contenuti p {
+#jumbotron p {
     margin: 30px 0 20px;
     line-height: 25px;
+}
+
+#jumbotron a {
+    margin: 0 10px;
 }
 
 .pulsante {
@@ -88,31 +86,36 @@ nav ul li a {
     text-decoration: none;
 }
 
-#jumbotron-contenuti a {
-    margin: 0 10px;
-}
+
+/* CSS relativo al main */
 
 .blocco-contenuto-principale {
-    /* debug */
-    background-color: lightgrey;
+    padding: 30px 0;
 }
 
 .contenuto-1 {
-    width: 60%;
+    width: 70%;
     float: left;
+}
 
-    /* debug */
-    height: 300px;
-    background-color: red;
+.contenuto-1 img {
+    max-width: 100%;
+    object-fit: contain;
 }
 
 .contenuto-2 {
-    width: 40%;
+    width: 30%;
     float: left;
+    margin-top: 40px;
+}
 
-    /* debug */
-    height: 450px;
-    background-color: yellowgreen;
+.contenuto-2 h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.contenuto-2 p {
+    line-height: 25px;
 }
 
 footer {
